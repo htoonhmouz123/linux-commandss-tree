@@ -1,27 +1,36 @@
-# linux-commandss-tree
-A structured directory tree documenting essential Linux file and directory commands, organized by category — create/destroy, display, manipulate, and compress. Each command includes a description, syntax, and usage examples
+# 🐧 Linux Commands Reference Tree
+
+<div align="center">
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Status](https://img.shields.io/badge/Commands-13-blue?style=for-the-badge)
+
+A structured directory tree documenting essential Linux file and directory commands — organized by category, with descriptions, syntax, and usage examples for each command.
+
+</div>
 
 ---
 
-## Directory Structure
+## 📁 Directory Structure
 
 ```
 u1241706_sec1_prj1/
 └── files_dirs/
-    ├── Compress/
+    ├── 🗜️ Compress/
     │   ├── tar
     │   └── zip
-    ├── create_destroy/
+    ├── 🔨 create_destroy/
     │   ├── touch
     │   ├── mkdir
     │   ├── rm
     │   ├── rmdir
     │   └── ln
-    ├── display/
+    ├── 👁️ display/
     │   ├── cat
     │   ├── less
     │   └── more
-    └── manipulate/
+    └── ✏️ manipulate/
         ├── cd
         ├── cp
         └── mv
@@ -29,67 +38,123 @@ u1241706_sec1_prj1/
 
 ---
 
-## Commands Covered
+## 📋 Commands Reference
 
-### Compress
-| Command | Description |
-|---------|-------------|
-| `tar` | Creates an archive containing files and directories |
-| `zip` | Compresses files into a zip archive to save space |
+### 🗜️ Compress
 
-### Create & Destroy
-| Command | Description |
-|---------|-------------|
-| `touch` | Creates an empty file |
-| `mkdir` | Creates one or more new directories |
-| `rm` | Permanently removes files or directories |
-| `rmdir` | Removes empty directories |
-| `ln` | Creates hard or symbolic links between files |
+| Command | Syntax | Description |
+|---------|--------|-------------|
+| `tar` | `tar [options] [archive] [files]` | Creates or extracts an archive containing files and directories |
+| `zip` | `zip [options] archive files` | Compresses files into a zip archive to save space |
 
-### Display
-| Command | Description |
-|---------|-------------|
-| `cat` | Displays file contents in the terminal |
-| `less` | Views file content page by page (forward & backward) |
-| `more` | Views file content one screen at a time (forward only) |
-
-### Manipulate
-| Command | Description |
-|---------|-------------|
-| `cd` | Changes the current working directory |
-| `cp` | Copies files or directories to another location |
-| `mv` | Moves or renames files and directories |
+**Examples:**
+```bash
+tar -cvf archive.tar file1 file2     # Create archive
+tar -xvf archive.tar                 # Extract archive
+zip myarchive.zip file1 file2        # Create zip
+```
 
 ---
 
-## File Format
+### 🔨 Create & Destroy
 
-Each command file follows this structure:
+| Command | Syntax | Description |
+|---------|--------|-------------|
+| `touch` | `touch [options] filename` | Creates a new empty file or updates timestamp |
+| `mkdir` | `mkdir [options] dirname` | Creates one or more new directories |
+| `rm` | `rm [options] file` | Permanently removes files or directories |
+| `rmdir` | `rmdir [options] dirname` | Removes empty directories |
+| `ln` | `ln [options] source link` | Creates hard or symbolic links between files |
+
+**Examples:**
+```bash
+touch newfile.txt                    # Create empty file
+mkdir myfolder                       # Create directory
+mkdir -p parent/child/grandchild     # Create nested directories
+rm file.txt                          # Remove file
+rm -r myfolder                       # Remove directory recursively
+rmdir emptyfolder                    # Remove empty directory
+ln -s target linkname                # Create symbolic link
+```
+
+---
+
+### 👁️ Display
+
+| Command | Syntax | Description |
+|---------|--------|-------------|
+| `cat` | `cat [options] file` | Displays entire file contents in the terminal |
+| `less` | `less [options] file` | Views file content page by page — supports forward & backward navigation |
+| `more` | `more [options] file` | Views file content one screen at a time — forward only |
+
+**Examples:**
+```bash
+cat file.txt                         # Display file
+cat file1 file2 > combined.txt       # Combine files
+less largefile.txt                   # Page through file (q to quit)
+more largefile.txt                   # Page through file
+```
+
+---
+
+### ✏️ Manipulate
+
+| Command | Syntax | Description |
+|---------|--------|-------------|
+| `cd` | `cd [directory]` | Changes the current working directory |
+| `cp` | `cp [options] source destination` | Copies files or directories to another location |
+| `mv` | `mv [options] source destination` | Moves or renames files and directories |
+
+**Examples:**
+```bash
+cd /home/user/Documents              # Go to specific directory
+cd ..                                # Go up one level
+cd ~                                 # Go to home directory
+cp file.txt backup.txt               # Copy file
+cp -r folder/ backup_folder/        # Copy directory recursively
+mv file.txt newname.txt              # Rename file
+mv file.txt /home/user/              # Move file to directory
+```
+
+---
+
+## 📄 File Format
+
+Each command file in the tree follows this structure:
 
 ```
-[Description]
+[Description of the command]
 
 [Syntax]
 
-[Examples]
+[Usage examples]
 
-[Author]
-[ID]
-```
-
-**Example — `cp` file:**
-```
-cp command copies files or directories from one place to another, keeps the original unchanged
-
-cp [options] source destination
-
-cp file1 file2
-cp -r file1 file2
-
-Hatoon Hmouz
-1241706
+[Author name]
+[Student ID]
 ```
 
 ---
 
+## ▶️ How to Use
+
+```bash
+# Clone the repository
+git clone https://github.com/htoonhmouz123/linux-commands-tree.git
+cd linux-commands-tree/u1241706_sec1_prj1/files_dirs
+
+# Read any command reference
+cat manipulate/cp
+cat display/less
+cat create_destroy/mkdir
+cat Compress/tar
+```
+
+---
+
+## 👩‍💻 Author
+
+**Hatoon Hmouz** — 1241706  
+Computer Science Student @ Birzeit University  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hatoon-hmouz-28819333a)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/htoonhmouz123)
 
