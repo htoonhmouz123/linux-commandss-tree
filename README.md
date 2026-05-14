@@ -153,7 +153,7 @@ cat Compress/tar
 
 ## 👩‍💻 Author
 
-**Hatoon Hmouz** — 1241706  
+**Hatoon Hmouz** 
 Computer Science Student @ Birzeit University  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hatoon-hmouz-28819333a)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/htoonhmouz123)
